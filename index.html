@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sweety Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img src="./images/Sweety_logo.png" alt="sweetylogo" />
+      </div>
+      <nav class="nav-links">
+        <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="#about"><i class="fa-solid fa-user"></i> About</a>
+        <a href="#skills"><i class="fa-solid fa-code"></i> Skills</a>
+        <a href="#certificates">
+          <i class="fa-solid fa-certificate"></i> Certificates
+        </a>
+        <a href="#projects"
+          ><i class="fa-solid fa-diagram-project"></i> Projects</a
+        >
+        <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+      </nav>
+    </header>
+
+    <!-- Mode Toggle Button -->
+    <div class="mode-switch">
+      <input type="checkbox" id="mode-toggle" hidden />
+      <label for="mode-toggle" class="toggle">
+        <div class="slider"></div>
+      </label>
+    </div>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+      <div class="content">
+        <h2>Hello I'm</h2>
+        <h1>Sweety Mitra</h1>
+        <p>
+          "Frontend by passion, full stack by ambition—bringing ideas to life
+          from pixel to process, turning vision into seamless user journeys.
+          Driven by curiosity, I build with purpose and evolve with every
+          project."
+        </p>
+
+        <div class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/sweety-mitra-a4b7a0242/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/Sweety-Mitra" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://x.com/" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/accounts/login/?hl=en"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+
+        <a href="Sweety_CV.pdf" class="download-btn" download>Download CV</a>
+      </div>
+
+      <div class="profile-img">
+        <img src="./images/profile_photo.jpeg" alt="sweety_pic" />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="about-content">
+        <div class="about-img">
+          <img src="./images/profile_photo.jpeg" alt="Sweety profile" />
+        </div>
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            Hello! I'm Sweety, a frontend enthusiast and aspiring full-stack
+            developer. I enjoy crafting clean user interfaces and building full
+            web solutions from scratch.
+          </p>
+
+          <input type="checkbox" id="read-toggle" class="read-toggle" hidden />
+
+          <p class="extra">
+            I love combining creativity with functionality to bring ideas to
+            life. I strive to create impactful digital experiences. I have
+            worked on various projects using technologies like React, Node.js,
+            and MongoDB.
+          </p>
+
+          <p class="extra">
+            I also thrive on transforming challenges into intuitive, responsive
+            interfaces that feel as good as they look. Each line of code is a
+            step toward elevating the user experience.
+          </p>
+
+          <label for="read-toggle" class="readmore-btn"></label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <div class="skill-center"><h2>My Skills</h2></div>
+      <div class="skills-container">
+        <!-- Left Side: Linear Bars -->
+        <div class="left-skills">
+          <div class="skill-bar">
+            <span>HTML</span>
+            <div class="bar">
+              <div class="fill" style="width: 90%"><span>90%</span></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <span>CSS</span>
+            <div class="bar">
+              <div class="fill" style="width: 80%"><span>80%</span></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <span>JavaScript</span>
+            <div class="bar">
+              <div class="fill" style="width: 75%"><span>75%</span></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <span>React</span>
+            <div class="bar">
+              <div class="fill" style="width: 70%"><span>70%</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Circular Skills -->
+        <div class="right-skills">
+          <div class="skill-circle-wrapper">
+            <div class="circle" style="--percent: 80">
+              <div class="inner-circle">80%</div>
+            </div>
+            <p>Strong Communication</p>
+          </div>
+          <div class="skill-circle-wrapper">
+            <div class="circle" style="--percent: 90">
+              <div class="inner-circle">90%</div>
+            </div>
+            <p>Creative Thinking</p>
+          </div>
+          <div class="skill-circle-wrapper">
+            <div class="circle" style="--percent: 70">
+              <div class="inner-circle">80%</div>
+            </div>
+            <p>Team Work</p>
+          </div>
+          <div class="skill-circle-wrapper">
+            <div class="circle" style="--percent: 75">
+              <div class="inner-circle">85%</div>
+            </div>
+            <p>Organization</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certificates" id="certificates">
+      <div class="certificates">
+        <h2>My Certificates</h2>
+        <div class="cards">
+          <div class="card card-1">
+            <img
+              src="./images/certificate_images/coursera.png"
+              alt="coursera_img"
+              class="card-image"
+            />
+            <h3>Coursera: Capstone (React App)</h3>
+            <p>
+              Completed a full-stack React app project as part of Coursera’s
+              specialization.
+            </p>
+            <a
+              href="./certificates/Capstone(React_App).pdf"
+              class="cert-btn"
+              target="_blank"
+              >View Certificate</a
+            >
+          </div>
+          <div class="card card-2">
+            <img
+              src="./images/certificate_images/NPTEL.png"
+              alt="nptel_img"
+              class="card-image"
+            />
+            <h3>NPTEL: Distributed System</h3>
+            <p>Studied distributed systems and architecture through NPTEL.</p>
+            <a
+              href="./certificates/Distributed Systems(NPTEL).pdf"
+              class="cert-btn-2"
+              target="_blank"
+              >View Certificate</a
+            >
+          </div>
+          <div class="card card-3">
+            <img
+              src="./images/certificate_images/hackathon.png"
+              alt="hackathon_img"
+              class="card-image"
+            />
+            <h3>Hackathon: Ideathon 22</h3>
+            <p>Presented a tech-driven idea in Ideathon 2022.</p>
+            <a
+              href="./certificates/ideathon.pdf"
+              class="cert-btn-3"
+              target="_blank"
+              >View Certificate</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <div class="projects">
+        <h2>Latest Projects</h2>
+        <div class="cards">
+          <table>
+            <tr>
+              <td>
+                <div class="card card-1">
+                  <img
+                    src="./images/project_iamges/proj_portfolio.png"
+                    alt="portfolio_img"
+                    class="card-image"
+                  />
+                  <h3>Portfolio Website</h3>
+                  <p>
+                    Designed a personal portfolio using HTML, CSS. Showcases
+                    projects, skills, and contact form integration.
+                  </p>
+                  <a
+                    href="./project/project restaurant/index.html"
+                    class="proj-btn"
+                    target="_blank"
+                    >View Project</a
+                  >
+                </div>
+              </td>
+              <td>
+                <div class="card card-2">
+                  <img
+                    src="./images/project_iamges/proj_weather.png"
+                    alt="weather_img"
+                    class="card-image"
+                  />
+                  <h3>Weather App</h3>
+                  <p>
+                    Built with OpenWeather API and React.<br />
+                    Users can search and view real-time weather data.
+                  </p>
+                  <a
+                    href="./project/project restaurant/index.html"
+                    class="proj-btn"
+                    target="_blank"
+                    >View Project</a
+                  >
+                </div>
+              </td>
+              <td>
+                <div class="card card-3">
+                  <img
+                    src="./images/project_iamges/proj_quiz.png"
+                    alt="quizapp_img"
+                    class="card-image"
+                  />
+                  <h3>Quiz App</h3>
+                  <p>
+                    Interactive quiz game built in JavaScript.<br />
+                    Tracks score and shows results instantly.
+                  </p>
+                  <a
+                    href="./project/project restaurant/index.html"
+                    class="proj-btn"
+                    target="_blank"
+                    >View Project</a
+                  >
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="card card-1">
+                  <img
+                    src="./images/project_iamges/proj_todo.png"
+                    alt="todolist_img"
+                    class="card-image"
+                  />
+                  <h3>To-Do List</h3>
+                  <p>
+                    Created a task manager using JavaScript and LocalStorage.<br />
+                    Supports adding, deleting, and saving tasks.
+                  </p>
+                  <a
+                    href="./project/project restaurant/index.html"
+                    class="proj-btn"
+                    target="_blank"
+                    >View Project</a
+                  >
+                </div>
+              </td>
+              <td>
+                <div class="card card-2">
+                  <img
+                    src="./images/project_iamges/proj_receipe.png"
+                    alt="receipe_img"
+                    class="card-image"
+                  />
+                  <h3>Recipe Finder</h3>
+                  <p>
+                    Search for recipes using Edamam API and React hooks.<br />
+                    Displays ingredients and cooking steps.
+                  </p>
+                  <a
+                    href="./project/project restaurant/index.html"
+                    class="proj-btn"
+                    target="_blank"
+                    >View Project</a
+                  >
+                </div>
+              </td>
+              <td>
+                <div class="card card-3">
+                  <img
+                    src="./images/project_iamges/proj_blog.png"
+                    alt="blogcms_img"
+                    class="card-image"
+                  />
+                  <h3>Blog CMS</h3>
+                  <p>
+                    A mini content management system built with PHP & MySQL.<br />
+                    Admin panel to post, edit, and delete articles.
+                  </p>
+                  <a
+                    href="./project/project restaurant/index.html"
+                    class="proj-btn"
+                    target="_blank"
+                    >View Project</a
+                  >
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="contact-me">
+        <h2>Contact Me</h2>
+        <form>
+          <input type="text" placeholder="Your Name" required /><br />
+          <input type="email" placeholder="Your Email" required /><br />
+          <textarea placeholder="Your Message" rows="5" required></textarea
+          ><br />
+          <div class="form-button-container">
+            <button type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-content">
+          <p>&copy; 2025 Sweety Mitra. All rights reserved.</p>
+          <div class="footer-buttons">
+            <a href="tel:+1234567890" class="footer-btn call-btn">
+              <i class="fas fa-phone-alt"></i> Call
+            </a>
+            <a href="mailto:sweety@example.com" class="footer-btn email-btn">
+              <i class="fas fa-envelope"></i> Email
+            </a>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
